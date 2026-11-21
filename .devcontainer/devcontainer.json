@@ -1,0 +1,10 @@
+{
+  "name": "14주차 my_api (Docker 실습용)",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "pip install fastapi uvicorn && npm install -g @anthropic-ai/claude-code",
+  "forwardPorts": [8000]
+}
